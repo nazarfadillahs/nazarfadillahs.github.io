@@ -46,24 +46,23 @@
   height: auto;
 }
 
-.about-me .title {
-  color: aqua;
-  width: 90vw;
-  font-size: 30px;
-  text-align: center;
-  height: fit-content;
-  position: absolute;
-  margin-top: 50px;
-}
-
 .about-me .container {
   display: flex;
   width: 90vw;
   justify-content: center;
   height: auto;
   margin: 200px auto;
+  flex-direction: row;
 }
-
+.about-me .title {
+  color: aqua;
+  width: 90vw;
+  font-size: 30px;
+  text-align: center;
+  height: fit-content;
+  margin: auto;
+  margin-top: 50px;
+}
 .about-me .content {
   width: 400px;
   background-color: aqua;
