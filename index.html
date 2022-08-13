@@ -36,7 +36,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="content">
-        <h1>Hello world<br>I'm <span>Nazar</span></h1>
+        <h1>Hello world<br />I'm <span>Nazar</span></h1>
         <p></p>
       </div>
     </section>
@@ -46,14 +46,17 @@
     <section class="about-me" id="about-me">
       <div class="title"><h1>&#60;section class = "about-me" id ="about-me"&#62;</h1></div>
       <div class="container">
-          <img src="img/IMG_6555.JPG" alt="">
+        <img src="img/IMG_6555.JPG" alt="" />
         <div class="content">
           <h1>About Me</h1>
-          <br>
+          <br />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas voluptates accusamus facere quia, est aliquid corrupti distinctio porro in nisi velit nesciunt odit, at illum omnis numquam. Fuga, sequi.</p>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum blanditiis voluptatibus corporis nisi ratione exercitationem et! Et consequatur minima provident, culpa cupiditate laborum ab debitis sint, ducimus ex accusamus asperiores, animi sit necessitatibus minus. Consectetur consequatur distinctio illo rerum tempore quam ullam odio, asperiores quasi reprehenderit voluptatem commodi labore animi!</p>
-          <br>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum blanditiis voluptatibus corporis nisi ratione exercitationem et! Et consequatur minima provident, culpa cupiditate laborum ab debitis sint, ducimus ex accusamus
+            asperiores, animi sit necessitatibus minus. Consectetur consequatur distinctio illo rerum tempore quam ullam odio, asperiores quasi reprehenderit voluptatem commodi labore animi!
+          </p>
+          <br />
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae neque nemo vitae atque labore eaque necessitatibus sint odit commodi dignissimos.</p>
         </div>
       </div>
@@ -65,16 +68,43 @@
       <div class="title"><h1>&#60;section class = "portfolio" id ="portfolio"&#62;</h1></div>
       <div class="container">
         <div class="item satu">
-         <img src="img/item1.png" alt="" height="401px">
-         <span><h3>Bootstrap 5</h3></span>
+          <img src="img/item1.png" alt="" height="401px" />
+          <span><h3>Bootstrap 5</h3></span>
         </div>
         <div class="item dua">
-          <img src="img/item1.png" alt="" height="401px">
+          <img src="img/item1.png" alt="" height="401px" />
           <span><h3>Bootstrap 5</h3></span>
         </div>
       </div>
     </section>
     <!-- akhir portfolio -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="title"><h1>&#60;section class = "contact" id ="contact"&#62;</h1></div>
+      <div class="container">
+        <h3>Contact Me</h3>
+        <form name="contact">
+        <div class="form">
+          <input type="text" id="name" class="input" autocomplete="off" placeholder="Enter your name" required name="nama"/>
+          <label for="name" class="label">Name</label>
+        </div>
+        <div class="form">
+          <input type="email" id="email" class="input" autocomplete="off" placeholder="Enter your email" name="email" />
+          <label for="name" class="label">email</label>
+        </div>
+        <div class="form">
+          <textarea name="pesan" id="message" class="input-message" placeholder="Enter your Message" autocomplete="off"></textarea>
+          <label for="massage" class="label">message</label>
+        </div>
+        <div class="btn">
+        <button type="submit" class="button">Submit</button>
+        <button type="submit" class="button-loading d-none"><div class="load"></div></button> 
+        </div>
+      </div>
+      </form>
+    </section>
+    <!-- akhir contact -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
