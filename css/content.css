@@ -31,7 +31,7 @@
 
 .hero p {
   font-size: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 100;
   color: #fff;
 }
@@ -158,6 +158,7 @@ span h3 {
   width: 50vw;
   background-color: aqua;
   margin: 20px auto;
+  margin-bottom: 100px;
 }
 
 .contact h3 {
@@ -187,6 +188,7 @@ span h3 {
   margin-top: 50px;
   outline: none;
   transition: 0.5s;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .input::placeholder {
@@ -207,6 +209,7 @@ span h3 {
   margin-top: 50px;
   outline: none;
   transition: 0.5s;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .input-message::placeholder {
@@ -270,6 +273,69 @@ span h3 {
   animation: loading 1s linear infinite;
 }
 
+/* footer */
+
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: #000;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.icon.ig,
+.icon.fb,
+.icon.yt {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  transition: 0.5s;
+}
+
+.icon i {
+  margin: auto;
+  font-size: 25px;
+}
+
+.icon.ig:hover {
+  background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f77737);
+  color: #fff;
+}
+
+.icon.yt:hover {
+  background-color: #da2d2d;
+  color: #fff;
+}
+
+.icon.fb:hover {
+  background-color: #405de6;
+  color: #fff;
+}
+
+footer h3 {
+  color: rgb(204, 204, 204);
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
 @keyframes loading {
   to {
     transform: rotate(1turn);
@@ -295,6 +361,10 @@ span h3 {
     flex-direction: column;
     width: 100%;
     align-items: center;
+  }
+
+  .contact .container {
+    width: 90vw;
   }
 }
 
@@ -337,6 +407,6 @@ span h3 {
   }
 
   .contact .container {
-    width: 400px;
+    width: 90vw;
   }
 }
