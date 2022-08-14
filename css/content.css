@@ -159,6 +159,7 @@ span h3 {
   background-color: aqua;
   margin: 20px auto;
   margin-bottom: 100px;
+  position: relative;
 }
 
 .contact h3 {
@@ -273,6 +274,57 @@ span h3 {
   animation: loading 1s linear infinite;
 }
 
+.alert {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+  bottom: 30%;
+  background-color: #111111;
+  margin: auto;
+  z-index: 3;
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.841));
+  overflow: hidden;
+}
+
+.alert .icon {
+  border: aqua solid 4px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.alert .icon i {
+  color: aqua;
+  font-size: 60px;
+}
+
+.alert h5 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  color: aqua;
+}
+
+.button-continue {
+  height: 40px;
+  width: 70px;
+  border: aqua solid 1px;
+  background-color: #0f0f0f;
+  cursor: pointer;
+  transition: 0.5s;
+  color: aqua;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.button-continue:hover {
+  background-color: aqua;
+  color: #000;
+}
 /* footer */
 
 footer {
@@ -366,6 +418,12 @@ footer a {
   .contact .container {
     width: 90vw;
   }
+
+  .alert {
+    bottom: 23%;
+    left: 20%;
+    right: 20%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -408,5 +466,11 @@ footer a {
 
   .contact .container {
     width: 90vw;
+  }
+
+  .alert {
+    bottom: 23%;
+    left: 12%;
+    right: 12%;
   }
 }
