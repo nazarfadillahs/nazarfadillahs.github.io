@@ -85,6 +85,10 @@
   background-attachment: fixed;
 }
 
+.portfolio a {
+  text-decoration: none;
+}
+
 .portfolio .title {
   color: aqua;
   margin-top: 50px;
