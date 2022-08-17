@@ -19,10 +19,18 @@
 }
 
 .hero .content {
-  margin-top: 200px;
-  margin-left: 50px;
   position: relative;
   z-index: 1;
+  width: 90vw;
+  margin: auto;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .content .item-dua img {
+  width: 300px;
+  margin-top: 20px;
 }
 
 .hero h1 {
@@ -399,7 +407,45 @@ footer a {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .hero .content {
+    display: flex;
+  }
+
+  .hero .content .item-satu h1 {
+    font-size: 90px;
+  }
+
+  .hero .content .item-dua img {
+    width: 250px;
+  }
+}
+
 @media screen and (max-width: 820px) {
+  .hero .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+
+  .hero .content .item-satu {
+    order: 2;
+  }
+
+  .hero .content .item-dua {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .hero .content .item-satu h1 {
+    font-size: 80px;
+    order: 2;
+  }
+
+  .hero .content .item-dua img {
+    width: 200px;
+    order: 1;
+  }
   .about-me .container {
     display: flex;
     flex-direction: column;
