@@ -282,8 +282,8 @@ span h3 {
   height: 15px;
   width: 15px;
   margin: auto;
-  border: 5px solid rgba(255, 255, 255, 0.282);
-  border-top-color: #fff;
+  border: 5px solid rgba(0, 246, 213, 0.438);
+  border-top-color: aqua;
   border-radius: 50%;
   animation: loading 1s linear infinite;
 }
@@ -423,6 +423,10 @@ footer a {
 }
 
 @media screen and (max-width: 820px) {
+  .hero {
+    height: 700px;
+  }
+
   .hero .content {
     display: flex;
     flex-direction: column;
