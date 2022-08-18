@@ -524,6 +524,20 @@ footer a {
 
   .alert {
     width: 60%;
-    height: 50vh;
+    height: 300px;
+  }
+
+  .alert .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .alert h5 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .alert .icon i {
+    font-size: 40px;
   }
 }
