@@ -523,8 +523,7 @@ footer a {
   }
 
   .alert {
-    bottom: 23%;
-    left: 12%;
-    right: 12%;
+    width: 60%;
+    height: 50vh;
   }
 }
