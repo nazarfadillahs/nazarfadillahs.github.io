@@ -290,19 +290,21 @@ span h3 {
 
 .alert {
   position: fixed;
-  top: 30%;
-  left: 30%;
-  right: 30%;
-  bottom: 30%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #111111;
   margin: auto;
   z-index: 3;
   filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.841));
   overflow: hidden;
+  height: 320px;
+  width: 300px;
 }
 
 .alert .icon {
-  border: aqua solid 4px;
+  border: aqua solid 2px;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -468,9 +470,9 @@ footer a {
   }
 
   .alert {
-    bottom: 23%;
-    left: 20%;
-    right: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 
