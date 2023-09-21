@@ -143,16 +143,17 @@
 
     <script src="js/app.js"></script>
     <script src="js/coba.js"></script>
-    <script>
-      const scriptURL = '<SCRIPT URL>';
-      const form = document.forms['contact'];
 
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        fetch(ScriptURL,{method: 'POST', body: new Formdata(form)})
-        .then((respon)=> console.log('succes!',response))
-        .catch((error)=> console.error('error!', error.message))
-      });
+    <script>
+      const scriptURL = '<SCRIPT URL>'
+      const form = document.forms['contact']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
     </script>
   </body>
 </html>
