@@ -36,7 +36,9 @@
 
     <!-- Hero -->
     <section class="hero">
+
       <div class="content">
+        
         <div class="item-satu"><h1>Hello world<br />I'm <span>Nazar</span></h1>
         <p></p></div>
         <div class="item-dua"><img src="img/hutri.png" alt=""></div>
@@ -141,5 +143,16 @@
 
     <script src="js/app.js"></script>
     <script src="js/coba.js"></script>
+    <script>
+      const scriptURL = '<SCRIPT URL>';
+      const form = document.forms['contact'];
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fetch(ScriptURL,{method: 'POST', body: new Formdata(form)})
+        .then((respon)=> console.log('succes!',response))
+        .catch((error)=> console.error('error!', error.message))
+      });
+    </script>
   </body>
 </html>
